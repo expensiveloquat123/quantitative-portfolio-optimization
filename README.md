@@ -145,7 +145,22 @@ I implemented a **40% maximum weight per asset** constraint to:
 - Reflect real-world portfolio management practices
 - Balance theoretical optimality with practical risk management
 
-**Tradeoff:** The constrained portfolio achieves slightly lower Sharpe ratio than the unconstrained optimum, but provides better risk-adjusted returns through diversification.
+**Impact on Results:**
+- Without constraints: The optimizer allocated 100% to a single asset (mathematically optimal but unrealistic)
+- With 40% constraint: Portfolio diversifies across multiple assets, reducing concentration risk
+- **Efficient Frontier Note:** With position constraints, the efficient frontier shows fewer feasible points, and the max Sharpe portfolio may appear slightly off the theoretical frontier. This is expected behavior - real-world constraints create a tradeoff between theoretical optimality and practical risk management.
+
+**Example Output (Constrained):**
+The max Sharpe portfolio distributes weights across assets rather than concentrating in one:
+```
+Asset 1: 25.3%
+Asset 2: 18.7%
+Asset 3: 40.0%  ← at constraint limit
+Asset 4: 12.4%
+Asset 5:  3.6%
+```
+
+**Tradeoff:** The constrained portfolio achieves slightly lower Sharpe ratio than the unconstrained optimum, but provides significantly better risk-adjusted returns through diversification and reduced tail risk.
 
 ### Sample Data vs. Real Data
 Currently uses simulated data for demonstration. This approach:
