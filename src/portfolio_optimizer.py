@@ -49,7 +49,7 @@ class PortfolioOptimizer:
 
     def optimize_max_sharpe(self,
                             long_only: bool = True,
-                            max_weight: float = 1.0) -> Dict:
+                            max_weight: float = 0.40) -> Dict:
         """
         Must: find portfolio with max Sharpe ratio.
         Args:
@@ -94,7 +94,7 @@ class PortfolioOptimizer:
 
     def optimize_min_volatility(self,
                                 long_only: bool = True,
-                                max_weight: float = 0.40) -> Dict:
+                                max_weight: float = 1) -> Dict:
         """
         Find minimum volatility portfolio.
         Args:
