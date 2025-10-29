@@ -209,7 +209,7 @@ This project was built using concepts from:
 
 **Ana Lucia Leon**
 - Master's Student - Business Engineering (Risk & Finance)
-- GitHub: [@expensivelouqat123](https://github.com/expensivelouqat123)
+- GitHub: [@expensiveloquat123](https://github.com/expensivelouqat123)
 - Interested in: Quantitative Finance, Algorithmic Trading, Risk Management
 
 ---
