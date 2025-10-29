@@ -60,7 +60,7 @@ class PortfolioOptimizer:
         """
         num_assets = self.num_assets
 
-        # Initial guess: equal weights
+        # = weights
         initial_weights = np.array([1.0 / num_assets] * num_assets)
 
         # sum(weights) = 1 = 100%
@@ -94,7 +94,7 @@ class PortfolioOptimizer:
 
     def optimize_min_volatility(self,
                                 long_only: bool = True,
-                                max_weight: float = 1.0) -> Dict:
+                                max_weight: float = 0.40) -> Dict:
         """
         Find minimum volatility portfolio.
         Args:
